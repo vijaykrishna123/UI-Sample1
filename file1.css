@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    background-color: lightblue;
+}
+
+h1 {
+    color: greenyellow;
+    text-align: center;
+}
+
+p {
+    font-size: 20px;
+}
+</style>
+</head>
+<body>
+
+<h1>CSS</h1>
+<p>First CSS class.</p>
+
+</body>
+</html>
