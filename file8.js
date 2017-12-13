@@ -24,7 +24,7 @@ console.log(sampleObj);
 //this keyword
 var me = {
     name: 'chitti',
-    Myname: funtion(){ //error here
+    Myname: function vijay(){ 
         console.log(this.name)
     }
     }
@@ -32,10 +32,29 @@ var me = {
 
 var me2 = {
     name: 'robo',
-    Myname: funtion(){
+    Myname: function(){
         console.log(this.name)
     }
     }
-me.Myname;//uncaught syntax error when executing me.Myname;
-me.MyName();//uncaught syntax error: Unexpected token
+me.Myname; //output [function : sai]
+me.MyName(); //chitti
+
+
+////
+
+var sampleFun= function(){
+    console.log(this.name);
+}
+var me={
+    name: 'sai',
+    sampleFun: sampleFun
+}
+var you={
+    name: 'ram',
+    sampleFun: sampleFun
+}
+me.sampleFun();  //sai
+you.sampleFun(); //ram
+
+window.alert("UI Class");
 
