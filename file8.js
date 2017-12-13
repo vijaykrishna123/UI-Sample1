@@ -1,16 +1,3 @@
-var person= funtion(name,age) 
-{
-
-    return{
-
-        name: name,
-        age: age,
-        myName: function(){
-            console.log(this.name);
-        }
-
-    }
-}
 
 var sampleObj = {
 name: 'object1',
@@ -37,7 +24,7 @@ console.log(sampleObj);
 //this keyword
 var me = {
     name: 'chitti',
-    Myname: funtion(){
+    Myname: funtion(){ //error here
         console.log(this.name)
     }
     }
@@ -49,4 +36,6 @@ var me2 = {
         console.log(this.name)
     }
     }
-me.myName();
+me.Myname;//uncaught syntax error when executing me.Myname;
+me.MyName();//uncaught syntax error: Unexpected token
+
