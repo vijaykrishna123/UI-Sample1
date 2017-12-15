@@ -48,3 +48,53 @@ add();
 //output 2
   //counter variable to be initialised once
   //they want to increment counter using add function
+  //they want private access to variable
+  var add = function(){
+      var counter=2;
+      return function(){
+          return counter += 1;
+
+      }
+  }
+  var add = function(){
+    var counter=2;
+    return function(){
+        return counter += 1;
+
+    }
+}();
+
+add();
+////
+var a=function(){
+    return function(){}
+}
+console.log(a());
+////
+var somevariable = function add(){
+    var p=1;
+    return function plus(){
+        counter+=1;
+
+    }
+}
+ add();
+ plus();
+ somevariable();
+
+
+ //////
+ var add = function(){
+    var counter=2;
+    return function(){
+        return counter += 1;
+
+    }
+}();
+console.log(add);
+console.log(add());
+
+add = function(){
+    return counter+=1;
+  }
+//output [function]    3   [function]
