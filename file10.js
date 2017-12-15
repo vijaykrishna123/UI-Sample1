@@ -98,3 +98,15 @@ add = function(){
     return counter+=1;
   }
 //output [function]    3   [function]
+//closures in javascript
+var add = (function(){
+    var counter=2;
+    return function(){
+        return counter += 1;
+
+    }
+})();
+add = function(){
+    return counter+=1;
+  }
+  //[function]
