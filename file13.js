@@ -129,7 +129,7 @@ var n=2017;
 var o=2018;
 console.log('adding 2017+2018 is ' + ( n + o ) + 'and\nnot' + (2* n + o)+ '.');
 //ouput
-adding 2017+2018 is 4035and
+adding 2017+2018 is 4035 and
 not6052.
 
 console.log('adding 2017+2018 is ' + ( n + o ) + 'and\nnot' + (2* n + o)+ '.');
@@ -146,5 +146,5 @@ not ${2* a11 + b11}`);
 output
 ///fifteen is 15 and 
 //not 20
-
+//${} $ and inbetween open and close paranthesis get evaluated
 console.log('adding 2017+2018 is ' + $( n + o ) and  not $(2* n + o)+ '.');
